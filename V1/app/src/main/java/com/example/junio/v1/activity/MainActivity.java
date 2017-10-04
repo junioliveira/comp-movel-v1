@@ -1,8 +1,10 @@
-package com.example.junio.v1;
+package com.example.junio.v1.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.junio.v1.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
