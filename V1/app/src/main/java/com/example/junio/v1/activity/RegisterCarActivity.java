@@ -37,6 +37,7 @@ public class RegisterCarActivity extends AppCompatActivity {
     EditText etModel;
 
     private DataBase dataBase;
+    private List<Category> categories;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -54,7 +55,7 @@ public class RegisterCarActivity extends AppCompatActivity {
     }
 
     private void setupSpinner() {
-        List<Category> categories = getCategories();
+        categories = getCategories();
 
         if (categories != null) {
             ArrayAdapter<Category> categoryArrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, categories);
@@ -102,11 +103,13 @@ public class RegisterCarActivity extends AppCompatActivity {
 
     private Car getPayloadRegister() {
         Car car = new Car();
+        Category category = categories.get(spCategory.getSelectedItemPosition());
+
         car.setNroChassi(Integer.parseInt(etNumberChassi.getText().toString()));
-        car.setIdCategory(1);
         car.setBrand(etBrand.getText().toString());
         car.setModel(etModel.getText().toString());
 
+        car.setCategory(category);
         return car;
     }
 

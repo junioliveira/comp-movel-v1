@@ -6,7 +6,7 @@ package com.example.junio.v1.model;
 
 public class Car {
     private int nroChassi;
-    private int idCategory;
+    private Category category;
     private String brand;
     private String model;
 
@@ -18,12 +18,12 @@ public class Car {
         this.nroChassi = nroChassi;
     }
 
-    public int getIdCategory() {
-        return idCategory;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setIdCategory(int idCategory) {
-        this.idCategory = idCategory;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     public String getBrand() {
