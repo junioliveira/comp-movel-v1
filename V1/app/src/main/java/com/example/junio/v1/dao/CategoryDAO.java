@@ -32,8 +32,10 @@ public class CategoryDAO {
 
         while (cursor != null && cursor.moveToNext()) {
             Category category = new Category();
+
             category.setIdCategory(cursor.getInt(0));
             category.setName(cursor.getString(1));
+
             categories.add(category);
         }
 

@@ -91,6 +91,8 @@ public class RegisterCarActivity extends AppCompatActivity {
             carDAO.insert(getPayloadRegister());
             DialogUtil.showMessage(RegisterCarActivity.this, "OK!", "Salvou!");
 
+            clean();
+
         } catch (Exception ex) {
             DialogUtil.showMessage(RegisterCarActivity.this, "ERRO!!!", ex.getMessage());
 
@@ -111,6 +113,13 @@ public class RegisterCarActivity extends AppCompatActivity {
 
         car.setCategory(category);
         return car;
+    }
+
+    private void clean() {
+        spCategory.setSelection(0);
+        etNumberChassi.setText("");
+        etBrand.setText("");
+        etModel.setText("");
     }
 
     @OnClick(R.id.btSave)

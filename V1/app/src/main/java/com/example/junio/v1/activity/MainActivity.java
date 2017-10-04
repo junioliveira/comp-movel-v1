@@ -34,4 +34,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, AllCarsActivity.class);
         startActivity(intent);
     }
+
+    @OnClick(R.id.btListCategory)
+    public void onClickBtListCategory() {
+        Intent intent = new Intent(MainActivity.this, AllCategoryActivity.class);
+        startActivity(intent);
+    }
 }

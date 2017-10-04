@@ -52,5 +52,14 @@
             android:background="@drawable/bg_menu_button"
             android:text="Listagem de Carros"
             android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btListCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@drawable/bg_menu_button"
+            android:text="Listagem de Categorias"
+            android:textAllCaps="false" />
     </LinearLayout>
 </LinearLayout>

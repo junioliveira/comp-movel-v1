@@ -30,6 +30,10 @@
         <activity
             android:name=".activity.AllCarsActivity"
             android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.AllCategoryActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
