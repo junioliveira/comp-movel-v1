@@ -1,14 +1,22 @@
 package com.example.junio.v1.model;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by junio on 03/10/17.
  */
 
 public class Car {
-    private int nroChassi;
+    @SerializedName("id")
+    private Integer nroChassi;
+    @SerializedName("categoria")
     private Category category;
+    @SerializedName("marca")
     private String brand;
+    @SerializedName("modelo")
     private String model;
+    @SerializedName("placa")
+    private String board;
 
     public int getNroChassi() {
         return nroChassi;
